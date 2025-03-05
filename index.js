@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection (use Replit's built-in DB or a free MongoDB Atlas cluster)
-mongoose.connect('mongodb+srv://ikezahuemma:<db_password>@cluster0.yxrgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0>')
+mongoose.connect('mongodb+srv://ikezahuemma:<U2uAY1f8otSXdhSV>@cluster0.yxrgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0>')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
