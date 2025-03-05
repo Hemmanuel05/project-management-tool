@@ -12,10 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection (use Replit's built-in DB or a free MongoDB Atlas cluster)
-mongoose.connect('mongodb+srv://ikezahuemma:<db_password>@cluster0.yxrgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0>', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => console.log('MongoDB connected'));
+mongoose.connect('mongodb+srv://ikezahuemma:<db_password>@cluster0.yxrgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0>')
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 // Simple route
 app.get('/', (req, res) => res.send('Project Management API'));
